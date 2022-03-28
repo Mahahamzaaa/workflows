@@ -17,4 +17,6 @@ jobs:
       uses: github/super-linter@v4.9.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        VALIDATE_ALL_CODEBASE : false 
+        VALIDATE_PYTHON : false 
       
