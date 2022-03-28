@@ -5,9 +5,9 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yq libpq-dev gcc python3.8 python3-pip && \
     apt-get clean
 
-WORKDIR /sample-app
+WORKDIR /workflows_pipeline
 
-COPY . /sample-app/
+COPY . /workflows_pipeline/
 
 RUN pip3 install -r requirements.txt && \
     pip3 install -r requirements-server.txt
